@@ -7,9 +7,9 @@ public class ExampleOfMixedDMLClass {
 
 		//insert contact
 		Contact conObj = new Contact(FirstName = 'John', 
-									LastName = 'Smith',
-									Email='John.Smith@abc.com',		
-									AccountId=acct.Id);
+					LastName = 'Smith',
+					Email='John.Smith@abc.com',		
+					AccountId=acct.Id);
 		insert conObj;
         
         //call this method to insert user asynchronously
