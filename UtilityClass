@@ -1,14 +1,13 @@
 public class UtilityClass {
     @future
     public static void insertSetupObjects(String firstName, String lastName, 
-	String email,String contactId) 
-	{
+	String email,String contactId) 	{
 		//retrieve profile information
         Profile objProfile = [SELECT Id FROM Profile WHERE Name='Customer Community User'];
        
 		String sRandom = String.ValueOf(Integer.valueOf(
-										math.rint(math.random()*1000000))
-										);
+						math.rint(math.random()*1000000))
+						);
 		
 		//create user
 		User newUser = new User(
