@@ -1,7 +1,0 @@
-private class JsonUpsertResult {  
-	List<Database.Error> Errors {get;set;}  
-	String SFDCId {get;set;}  
-	String ExternalId {get;set;}  
-	Boolean isCreated {get;set;}  
-	Boolean isSuccess {get;set;}  
-}
