@@ -1,3 +1,11 @@
+<!-- 
+    @name: UtilityClass
+    @description: Common utility class for reusable methods and functionalities
+    @author: Santanu Boral
+    @date: 3 JAN 2019
+    
+    CopyRight (c) 2019  
+-->
 public class UtilityClass {
     @future
     public static void insertSetupObjects(String firstName, String lastName, 
