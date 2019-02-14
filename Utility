@@ -11,7 +11,7 @@ public class Utility {
 	public static List<Messaging.SingleEmailMessage> lstEmail = 
 					new List<Messaging.SingleEmailMessage>();
 	
-	//prepare email with arguments passes
+	//prepare email with arguments passed
 	public static void prepareEmail(String recepient, String subject, String body) {
         Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
         String[] toAddresses = new String[] {recepient};
