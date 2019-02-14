@@ -7,8 +7,8 @@
     CopyRight (c) 2019  
 -->
 trigger LeadTrigger on Lead(before insert, before update, 
-							after insert, after update, 
-							after undelete) {
+				after insert, after update, 
+				after undelete) {
 								
 	LeadTriggerHandler handler = new LeadTriggerHandler();
 	
