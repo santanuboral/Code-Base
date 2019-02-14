@@ -25,16 +25,16 @@ public class OpportunityLineItemTriggerHandler{
 			mapOpptyProdCode.put(optLineItem.OpportunityId, lstProduct);
 			
 			//assign Date value to 7 days from Today.
-			if(optLineItem.ServiceDate == null)	{
+			if(optLineItem.ServiceDate == null) {
 				optLineItem.ServiceDate = System.Today()+7;
 			}					
 		}//end of for loop
 		
 		//retrieve list of line items which already exists in database.
 		List<OpportunityLineItem> lstOpptyLineItem = 
-								[SELECT OpportunityId, ProductCode
-								FROM OpportunityLineItem 
-								WHERE OpportunityId IN:mapOpptyProdCode.keySet()];
+			[SELECT OpportunityId, ProductCode
+			FROM OpportunityLineItem 
+			WHERE OpportunityId IN:mapOpptyProdCode.keySet()];
 		
 		//loop through the list of existing line item records
 		for(OpportunityLineItem optyli: lstOpptyLineItem) {
@@ -42,7 +42,8 @@ public class OpportunityLineItemTriggerHandler{
 			//compare the product code
 			if(lstProduct.contains(optyli.ProductCode)) {
 				//collect the error to show
-				lstNewOpportunity[0].addError('Product code ' + optyli.ProductCode + ' already exists');
+				lstNewOpportunity[0].addError('Product code ' + 
+					optyli.ProductCode + ' already exists');
 			}
 		}//end of for loop			
 	}
