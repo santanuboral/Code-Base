@@ -20,21 +20,21 @@ trigger LeadTrigger on Lead(before insert, before update,
             handler.OnBeforeUpdate(Trigger.old, Trigger.new, 
 						Trigger.oldMap, Trigger.newMap);
         }
-		when BEFORE_DELETE {
-			handler.OnBeforeDelete(Trigger.old, Trigger.oldMap);
-		}
-		when AFTER_INSERT {
-			handler.OnAfterInsert(Trigger.new,Trigger.newMap);
-		}			
-		when AFTER_UPDATE {
-			handler.OnAfterUpdate(Trigger.old, Trigger.new, 
-					Trigger.oldMap, Trigger.newMap);
-		}
-		when AFTER_DELETE {
-			handler.OnAfterDelete(Trigger.old, Trigger.oldMap);
-		}
-		when AFTER_UNDELETE {
-			handler.OnAfterUndelete(Trigger.new, Trigger.newMap);
-		}		
+	when BEFORE_DELETE {
+		handler.OnBeforeDelete(Trigger.old, Trigger.oldMap);
+	}
+	when AFTER_INSERT {
+		handler.OnAfterInsert(Trigger.new,Trigger.newMap);
+	}			
+	when AFTER_UPDATE {
+		handler.OnAfterUpdate(Trigger.old, Trigger.new, 
+				Trigger.oldMap, Trigger.newMap);
+	}
+	when AFTER_DELETE {
+		handler.OnAfterDelete(Trigger.old, Trigger.oldMap);
+	}
+	when AFTER_UNDELETE {
+		handler.OnAfterUndelete(Trigger.new, Trigger.newMap);
+	}		
     }
 }
