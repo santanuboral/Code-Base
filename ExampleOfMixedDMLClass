@@ -1,11 +1,11 @@
-<!-- 
+/*
     @name: ExampleOfMixedDMLClass
     @description: Example of showing mixed DML operation
     @author: Santanu Boral
     @date: 2 JAN 2019
     
     CopyRight (c) 2019  
--->
+*/
 public class ExampleOfMixedDMLClass {
     public static void insertTransactionalObjects() {
         
