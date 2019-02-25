@@ -1,11 +1,11 @@
-<!-- 
+/*
     @name: LeadTriggerHandler
     @description: Here we have shown a template of Trigger Handler with all events
     @author: Santanu Boral
     @date: 14 FEB 2019
     
     CopyRight (c) 2019  
--->
+*/
 public class LeadTriggerHandler{
 	
 	public void OnBeforeInsert(List<Lead> newList, Map<Id,Lead> newMap)	{
