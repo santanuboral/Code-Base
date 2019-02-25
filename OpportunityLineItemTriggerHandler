@@ -1,11 +1,11 @@
-<!-- 
+/*
     @name: OpportunityLineItemTriggerHandler
     @description: This class handles all operations of OpportunityLineItem trigger
     @author: Santanu Boral
     @date: 14 FEB 2019
     
     CopyRight (c) 2019  
--->
+*/
 public class OpportunityLineItemTriggerHandler{
 
 	public static void onBeforeInsert(List<OpportunityLineItem> lstNewOpportunity) 	{
