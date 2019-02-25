@@ -1,11 +1,11 @@
-<!-- 
+/* 
     @name: LeadTrigger
     @description: Example of Lead trigger will all types of events
     @author: Santanu Boral
     @date: 14 FEB 2019
     
     CopyRight (c) 2019  
--->
+*/
 trigger LeadTrigger on Lead(before insert, before update, 
 				after insert, after update, 
 				after undelete) {
