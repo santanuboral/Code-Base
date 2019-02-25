@@ -1,11 +1,11 @@
-<!-- 
+/* 
     @name: CaseTriggerHandler2
     @description: This trigger handler prepares and sends emails.
     @author: Santanu Boral
     @date: 14 FEB 2019
     
     CopyRight (c) 2019  
--->
+*/
 public class CaseTriggerHandler2{
 	
 	//declare static variable to hold case Ids
