@@ -1,11 +1,11 @@
-<!-- 
+/* 
     @name: TaskTrigger2
     @description: This trigger code has been refactored from TaskTrigger.
     @author: Santanu Boral
     @date: 14 FEB 2019
     
     CopyRight (c) 2019  
--->
+*/
 trigger TaskTrigger2 on Task(after insert) {
     if(trigger.isInsert && trigger.isAfter) {
 		//declare and instantiate List of tasks.
