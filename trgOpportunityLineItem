@@ -1,11 +1,11 @@
-<!-- 
+/* 
     @name: trgOpportunityLineItem
     @description: Before insert trigger on OpportunityLineItem
     @author: Santanu Boral
     @date: 14 FEB 2019
     
     CopyRight (c) 2019  
--->
+*/
 trigger trgOpportunityLineItem on OpportunityLineItem (before insert) 
 {
     Map<Id, List<String>> mapOpptyProdCode= new Map<Id, List<String>>(); 
