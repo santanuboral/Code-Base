@@ -1,11 +1,11 @@
-<!-- 
+/*
     @name: BusinessHoursServices
     @description: This class is used for BusinessHour related calculations.
     @author: Santanu Boral
     @date: 14 FEB 2019
     
     CopyRight (c) 2019  
--->
+*/
 public with sharing class BusinessHoursServices {
     //retrieves & assign the Organization level Business Hours to defaultBH 
     static BusinessHours defaultBH {
