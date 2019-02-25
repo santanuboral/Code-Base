@@ -1,11 +1,11 @@
-<!-- 
+/*
     @name: Utility
     @description: This class provides methods to prepare and send emails
     @author: Santanu Boral
     @date: 14 FEB 2019
     
     CopyRight (c) 2019  
--->
+*/
 public class Utility {
 	
 	public static List<Messaging.SingleEmailMessage> lstEmail = 
