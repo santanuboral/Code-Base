@@ -44,7 +44,7 @@ trigger trgOpportunityLineItem on OpportunityLineItem (before insert)
 		//compare the product code
 		if(lstProduct.contains(optyli.ProductCode)) {
 			//collect the error to show
-                Trigger.new[0].addError('Product code ' 
+                	optyli.addError('Product code ' 
 			+ optyli.ProductCode + ' already exists');
             }
         }       
