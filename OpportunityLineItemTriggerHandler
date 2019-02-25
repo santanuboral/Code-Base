@@ -42,7 +42,7 @@ public class OpportunityLineItemTriggerHandler{
 			//compare the product code
 			if(lstProduct.contains(optyli.ProductCode)) {
 				//collect the error to show
-				lstNewOpportunity[0].addError('Product code ' + 
+				optyli.addError('Product code ' + 
 					optyli.ProductCode + ' already exists');
 			}
 		}//end of for loop			
