@@ -8,6 +8,7 @@
 */
 public class OpportunityTriggerHandler{
     
+	/*
     public void OnBeforeUpdate(List<Opportunity> oldList, List<Opportunity> newList, 
                                 Map<Id,Opportunity> oldMap, Map<Id,Opportunity> newMap){
                                
@@ -19,5 +20,20 @@ public class OpportunityTriggerHandler{
             }
             
         }
-    }   
+    }
+	*/
+
+	public void OnBeforeUpdate(List<Opportunity> oldList, List<Opportunity> newList,   
+							Map<Id,Opportunity> oldMap, Map<Id,Opportunity> newMap){  
+							 
+		//perform before update related operation like validations  
+		for(Opportunity objOppty:newList) {  
+			try{  
+				BusinessRuleClass.validateOpportunity(objOppty);  //call this method for validation
+			}catch(Exception ex){  
+				objOppty.addError(ex.getMessage());  
+			}  
+		}  
+	}     
+	
 }
